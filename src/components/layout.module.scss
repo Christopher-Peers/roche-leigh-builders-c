@@ -1,0 +1,24 @@
+.main {}
+
+.background-image {
+	background-image: url('../../person-holding-grinder.jpg');
+	background-position: center center;
+	height: 100%;
+	opacity: 0.5;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+}
+
+.content-wrapper {
+	width: 100%;
+	padding: 1rem;
+}
+
+.content {
+	background-color: white;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+}
