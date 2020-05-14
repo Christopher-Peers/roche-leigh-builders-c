@@ -1,6 +1,8 @@
 .main {
 	padding: 2rem;
 	height: 100%;
+	display: flex;
+	justify-content: center;
 }
 
 .background-image {
@@ -19,7 +21,7 @@
 
 .content-wrapper {
 	width: 100%;
-	max-width: calc(100% - 12rem);
+	max-width: calc(100% - 8rem);
 	height: 100%;
 	margin-right: auto;
 	margin-left: auto;
