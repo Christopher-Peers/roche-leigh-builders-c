@@ -1,23 +1,34 @@
-.main {}
+.main {
+	padding: 2rem;
+	height: 100%;
+}
 
 .background-image {
-	background-image: url('../../person-holding-grinder.jpg');
+	background-image:  linear-gradient(rgba(76, 71, 119, 0.5), rgba(76, 71, 119, 0.5)), url('../../person-holding-grinder.jpg');
 	background-position: center center;
 	height: 100%;
 	opacity: 0.5;
 	position: absolute;
 	width: 100%;
 	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
 .content-wrapper {
 	width: 100%;
-	padding: 1rem;
+	max-width: calc(100% - 12rem);
+	height: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: white;
+    border-radius: 0.25rem;
+
 }
 
 .content {
-	background-color: white;
-	max-width: 600px;
 	margin-left: auto;
 	margin-right: auto;
 	height: 100%;

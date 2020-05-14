@@ -1,0 +1,14 @@
+.nav-bar-wrapper {
+    height: 50px;
+    border-radius: 0.25rem 0.25rem 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 1rem;
+}
+
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}

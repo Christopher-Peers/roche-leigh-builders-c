@@ -8,9 +8,20 @@ const IndexPage = () => {
 
 	return (
 		<Layout>
-			<LinearCard>
-				<h1 className={ indexStyles.title }>Roche Leigh Construction</h1>
-			</LinearCard>
+			<div className={ indexStyles.firstImage }>
+				<div className={ indexStyles.firstCard }>
+					<LinearCard>
+						<div className={ indexStyles.titleCard }>
+							<h1 className={ indexStyles.title }>Roche Leigh Construction</h1>
+							<p>Magna amet tempus etiam lorem nisl consequat</p>
+
+						</div>
+					</LinearCard>
+				</div>
+
+			</div>
+		
+			<p>lorem50</p>
 		</Layout>
 	)
 }
