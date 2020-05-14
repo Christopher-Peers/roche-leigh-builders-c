@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .first-card {
-	padding: 1rem;
+	padding: 0 1.5rem;
 	max-width: 400px;
 	text-align: center;
 }
@@ -40,9 +40,16 @@ h1, h2, h3, h4, h5, h6, p {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	font-size: 0.85rem;
 
 }
 
 .title {
-	color: white
+	color: white;
+	font-size: 1.8rem;
+	margin-bottom: 0.7rem;
+}
+
+.title-description {
+	margin-bottom: 0.9rem;
 }

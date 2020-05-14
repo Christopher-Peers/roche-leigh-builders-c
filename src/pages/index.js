@@ -14,7 +14,7 @@ const IndexPage = () => {
 					<LinearCard>
 						<div className={ indexStyles.titleCard }>
 							<h1 className={ indexStyles.title }>Roche Leigh Construction</h1>
-							<p>Magna amet tempus etiam lorem nisl consequat</p>
+							<p className={indexStyles.titleDescription } >Magna amet tempus etiam lorem nisl consequat</p>
 							<Button>Some text</Button>
 
 						</div>
