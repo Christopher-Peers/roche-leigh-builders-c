@@ -20,10 +20,13 @@ const IndexPage = () => {
 						</div>
 					</LinearCard>
 				</div>
+			</div>
 
+			<div className={ indexStyles.aboutText }>
+				<h2 className={ indexStyles.aboutTitle }>About us</h2>
+				<p>With over 20 years in the construction industry you can ensure your next project is in the best of hands..</p>
 			</div>
 		
-			<p>lorem50</p>
 		</Layout>
 	)
 }
