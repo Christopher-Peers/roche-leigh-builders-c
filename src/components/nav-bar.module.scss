@@ -1,5 +1,5 @@
 .nav-bar-wrapper {
-    height: 50px;
+    height: 2.75rem;
     border-radius: 0.25rem 0.25rem 0 0;
     display: flex;
     flex-direction: row;
@@ -11,4 +11,8 @@
     background-color: transparent;
     border: 0;
     cursor: pointer;
+}
+
+.hamburger svg {
+    fill: rgba(101, 101, 101, 0.3);
 }
