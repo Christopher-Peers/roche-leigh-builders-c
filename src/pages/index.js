@@ -1,6 +1,7 @@
 import React from "react"
 
 import LinearCard from '../components/linear-card';
+import Button from '../components/button';
 import Layout from '../components/layout';
 import indexStyles from './index.module.scss';
 
@@ -14,6 +15,7 @@ const IndexPage = () => {
 						<div className={ indexStyles.titleCard }>
 							<h1 className={ indexStyles.title }>Roche Leigh Construction</h1>
 							<p>Magna amet tempus etiam lorem nisl consequat</p>
+							<Button>Some text</Button>
 
 						</div>
 					</LinearCard>
