@@ -2,9 +2,9 @@ import React from 'react';
 
 import lineardCardStyles from './linear-card.module.scss';
 
-const LinearCard = ({ children }) => {
+const LinearCard = ({ children, isRounded = true }) => {
 	return (
-		<div className={ lineardCardStyles.cardWrapper }>{ children }</div>
+		<div className={ `${ isRounded ? lineardCardStyles.cardWrapperRounded : lineardCardStyles.cardWrapper }` }>{ children }</div>
 	)
 }
 

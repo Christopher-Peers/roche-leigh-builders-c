@@ -58,9 +58,13 @@ const IndexPage = () => {
 				</div>
 			</div>
 
-			<div className={ indexStyles.secondImage }>
+			<div className={ indexStyles.secondImage }></div>
 
-			</div>
+			<LinearCard isRounded={ false }>
+				<div className={ indexStyles.secondCard }>
+					<p>Some text</p>
+				</div>
+			</LinearCard>
 		
 		</Layout>
 	)
