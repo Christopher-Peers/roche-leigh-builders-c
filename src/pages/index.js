@@ -1,5 +1,7 @@
 import React from "react"
 
+import { FaHardHat, FaHammer, FaPaintRoller, FaScrewdriver, FaRuler, FaWrench } from 'react-icons/fa';
+
 import LinearCard from '../components/linear-card';
 import Button from '../components/button';
 import Layout from '../components/layout';
@@ -28,19 +30,27 @@ const IndexPage = () => {
 				<div>
 					<ul className={ indexStyles.qualifications }>
 						<li className={ indexStyles.qualification1 }>
-							<div className={ indexStyles.qualificationOuter }></div>
+							<div className={ indexStyles.qualificationOuter }>
+								<FaHardHat  size="2rem" />
+							</div>
 							<p>Text one</p>
 						</li>
 						<li className={ indexStyles.qualification2 }>
-							<div className={ indexStyles.qualificationOuter }></div>
+							<div className={ indexStyles.qualificationOuter }>
+								<FaHammer  size="2rem" />
+							</div>
 							<p>Text two</p>
 						</li>
 						<li className={ indexStyles.qualification3 }>
-							<div className={ indexStyles.qualificationOuter }></div>
+							<div className={ indexStyles.qualificationOuter }>
+								<FaPaintRoller  size="2rem" />
+							</div>
 							<p>Text three</p>
 						</li>
 						<li className={ indexStyles.qualification4 }>
-							<div className={ indexStyles.qualificationOuter }></div>
+							<div className={ indexStyles.qualificationOuter }>
+								<FaWrench  size="2rem" />
+							</div>
 							<p>Text four</p>
 						</li>
 					</ul>
