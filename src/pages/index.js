@@ -14,8 +14,8 @@ const IndexPage = () => {
 					<LinearCard>
 						<div className={ indexStyles.titleCard }>
 							<h1 className={ indexStyles.title }>Roche Leigh Construction</h1>
-							<p className={indexStyles.titleDescription } >Magna amet tempus etiam lorem nisl consequat</p>
-							<Button>Some text</Button>
+							<p className={indexStyles.titleDescription } >Your local construction experts.</p>
+							<Button>Contact us</Button>
 
 						</div>
 					</LinearCard>
@@ -25,6 +25,26 @@ const IndexPage = () => {
 			<div className={ indexStyles.aboutText }>
 				<h2 className={ indexStyles.aboutTitle }>About us</h2>
 				<p>With over 20 years in the construction industry you can ensure your next project is in the best of hands..</p>
+				<div>
+					<ul className={ indexStyles.qualifications }>
+						<li className={ indexStyles.qualification1 }>
+							<div className={ indexStyles.qualificationOuter }></div>
+							<p>Text one</p>
+						</li>
+						<li className={ indexStyles.qualification2 }>
+							<div className={ indexStyles.qualificationOuter }></div>
+							<p>Text two</p>
+						</li>
+						<li className={ indexStyles.qualification3 }>
+							<div className={ indexStyles.qualificationOuter }></div>
+							<p>Text three</p>
+						</li>
+						<li className={ indexStyles.qualification4 }>
+							<div className={ indexStyles.qualificationOuter }></div>
+							<p>Text four</p>
+						</li>
+					</ul>
+				</div>
 			</div>
 		
 		</Layout>
