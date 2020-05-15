@@ -11,6 +11,7 @@ const IndexPage = () => {
 
 	return (
 		<Layout>
+
 			<div className={ indexStyles.firstImage }>
 				<div className={ indexStyles.firstCard }>
 					<LinearCard>
@@ -55,6 +56,10 @@ const IndexPage = () => {
 						</li>
 					</ul>
 				</div>
+			</div>
+
+			<div className={ indexStyles.secondImage }>
+
 			</div>
 		
 		</Layout>
