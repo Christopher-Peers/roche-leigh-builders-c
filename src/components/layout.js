@@ -1,12 +1,14 @@
 import React from "react"
 
 import NavBar from '../components/nav-bar';
-import layoutStyles from './layout.module.scss';
+import Menu from '../components/menu';
+import layoutStyles from '../styles/layout.module.scss';
 
 const Layout = ({ children }) => {
 
 	return (
 		<div className={ layoutStyles.main }>
+			<Menu />
 			<div className={ layoutStyles.backgroundImage }></div>
 			<div className={ layoutStyles.contentWrapper }>
 				<NavBar />

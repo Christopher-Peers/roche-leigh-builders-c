@@ -1,0 +1,22 @@
+.menu {
+    position: fixed;
+    width: 18rem;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    background: linear-gradient(to right, rgb(238, 101, 136), rgb(246, 149, 96));
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-close-wrapper {
+    height: 40px;
+    background-color: lime;
+    width: 100%;
+}
+
+.menu-link-wrapper {
+    padding: 2rem;
+    color: white;
+}

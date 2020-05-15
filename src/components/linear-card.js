@@ -1,6 +1,6 @@
 import React from 'react';
 
-import lineardCardStyles from './linear-card.module.scss';
+import lineardCardStyles from '../styles/linear-card.module.scss';
 
 const LinearCard = ({ children, isRounded = true }) => {
 	return (

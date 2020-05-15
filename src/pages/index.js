@@ -5,7 +5,7 @@ import { FaHardHat, FaHammer, FaPaintRoller, FaScrewdriver, FaRuler, FaWrench } 
 import LinearCard from '../components/linear-card';
 import Button from '../components/button';
 import Layout from '../components/layout';
-import indexStyles from './index.module.scss';
+import indexStyles from '../styles/index.module.scss';
 
 const IndexPage = () => {
 
