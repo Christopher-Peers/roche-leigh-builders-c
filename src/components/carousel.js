@@ -9,9 +9,9 @@ export default class Carousel extends React.Component {
         return (
             <div className={ carouselStyles.carouselContainer }>
                 <div className={ carouselStyles.slides }>
-                    <div className={ carouselStyles.slide }>
-                        
-                    </div>
+                    <div className={ carouselStyles.slideLeft }></div>
+                    <div className={ carouselStyles.slideCenter }></div>
+                    <div className={ carouselStyles.slideRight }></div>
                 </div>
                 <div className={ carouselStyles.indicatorTrack }>
                     <div className={ carouselStyles.indicator }></div>
