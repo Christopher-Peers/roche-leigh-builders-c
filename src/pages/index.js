@@ -67,6 +67,19 @@ const IndexPage = () => {
 					<Button>Contact us</Button>
 				</div>
 			</LinearCard>
+
+			<div className={ indexStyles.recentWork }>
+				<h2 className={ indexStyles.recentWorkTitle }>Recent Work</h2>
+				<p>Here is a selection of recent work completed by us.</p>
+				<p>Here is a selection of recent work completed by us.</p>
+				<p>Here is a selection of recent work completed by us.</p>
+				<p>Here is a selection of recent work completed by us.</p>
+				<p>Here is a selection of recent work completed by us.</p>
+				<p>Here is a selection of recent work completed by us.</p>
+				<div>
+					
+				</div>
+			</div>
 		
 		</Layout>
 	)

@@ -69,12 +69,14 @@ ul li {
 	margin-bottom: 0.9rem;
 }
 
-.about-text {
+.about-text,
+.recent-work {
 	padding: 2rem 1.5rem;
 	text-align: center;
 }
 
-.about-title {
+.about-title,
+.recent-work-title {
 	font-size: 1.3rem;
 	background: linear-gradient(90deg, rgba(238, 101, 136, 0.95), rgba(246, 149, 96, 0.95));
 	background-clip: text;
