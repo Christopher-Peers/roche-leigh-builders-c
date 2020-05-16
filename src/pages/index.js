@@ -5,6 +5,7 @@ import { FaHardHat, FaHammer, FaPaintRoller, FaScrewdriver, FaRuler, FaWrench } 
 import LinearCard from '../components/linear-card';
 import Button from '../components/button';
 import Layout from '../components/layout';
+import Carousel from '../components/carousel';
 import indexStyles from '../styles/index.module.scss';
 
 const IndexPage = () => {
@@ -76,9 +77,9 @@ const IndexPage = () => {
 				<p>Here is a selection of recent work completed by us.</p>
 				<p>Here is a selection of recent work completed by us.</p>
 				<p>Here is a selection of recent work completed by us.</p>
-				<div>
-					
-				</div>
+
+				<Carousel />
+				
 			</div>
 		
 		</Layout>

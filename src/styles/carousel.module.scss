@@ -1,0 +1,44 @@
+.carousel-container {
+    width: 100%;
+    background-color: red;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.slides {
+    flex-grow: 1;
+}
+
+.slide {
+    width: 10rem;
+    height: 10rem;
+    box-shadow: 5px, 5px, 5px, grey;
+}
+
+.slide--active {
+
+}
+
+.indicator-track {
+    width: 100%;
+    background-color:  lime;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.indicator {
+    height: 0.75rem;
+    width: 0.75rem;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-right: 0.25rem;
+}
+
+.indicator--active {
+    @extend .indicator;
+    background-color: rgba(0, 0, 0, 0.75);
+}
