@@ -62,7 +62,9 @@ const IndexPage = () => {
 
 			<LinearCard isRounded={ false }>
 				<div className={ indexStyles.secondCard }>
-					<p>Some text</p>
+					<h2>Our Services</h2>
+					<p>We offer a wide range of competitevly priced services. From complete builds to loft conversions we have you covered.</p>
+					<Button>Contact us</Button>
 				</div>
 			</LinearCard>
 		
