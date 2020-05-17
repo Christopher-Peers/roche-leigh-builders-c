@@ -72,11 +72,6 @@ const IndexPage = () => {
 			<div className={ indexStyles.recentWork }>
 				<h2 className={ indexStyles.recentWorkTitle }>Recent Work</h2>
 				<p>Here is a selection of recent work completed by us.</p>
-				<p>Here is a selection of recent work completed by us.</p>
-				<p>Here is a selection of recent work completed by us.</p>
-				<p>Here is a selection of recent work completed by us.</p>
-				<p>Here is a selection of recent work completed by us.</p>
-				<p>Here is a selection of recent work completed by us.</p>
 
 				<Carousel />
 				
