@@ -2,8 +2,16 @@ import React, { useRef, useState, useLayoutEffect } from 'react';
 
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 
-
 import carouselStyles from '../styles/carousel.module.scss';
+
+const navigateLeft = () => {
+	console.log('Navigating left!');
+}
+
+const navigateRight = () => {
+	console.log('Navigating right!');
+
+}
 
 const Carousel = () => {
 	const targetRef = useRef();
@@ -22,11 +30,11 @@ const Carousel = () => {
 	return (
 		<div ref={ targetRef } className={ carouselStyles.carouselContainer }>
 			<div className={ carouselStyles.slides }>
-				<FaAngleLeft className={ carouselStyles.leftAngle } size="2rem"/>
+				<FaAngleLeft className={ carouselStyles.leftAngle } size="2rem" onClick={ navigateLeft } />
 				<div className={ carouselStyles.slideLeft }></div>
 				<div ref={ centerSlideRef } className={ carouselStyles.slideCenter }></div>
 				<div className={ carouselStyles.slideRight }></div>
-				<FaAngleRight className={ carouselStyles.rightAngle } size="2rem"/>
+				<FaAngleRight className={ carouselStyles.rightAngle } size="2rem" onClick={ navigateRight }/>
 			</div>
 			<div className={ carouselStyles.indicatorTrack }>
 				<div className={ carouselStyles.indicator }></div>
