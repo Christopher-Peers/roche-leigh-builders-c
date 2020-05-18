@@ -21,6 +21,20 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/`
+      }
+    },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/job-data/`
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       // options: {
       //   name: `gatsby-starter-default`,

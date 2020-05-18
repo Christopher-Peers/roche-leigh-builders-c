@@ -18,6 +18,9 @@ const Carousel = () => {
 	const centerSlideRef = useRef();
 	const [ dimensions, setDimensions ] = useState({});
 
+	const [ carouselCurrentIndex, setCarouselCurrentIndex ] = useState(0);
+	const [ carouselTotalSlides, setCarouselTotalSlides ] = useState(0);
+
 	useLayoutEffect(() => {
 		setDimensions(targetRef.current.getBoundingClientRect());
 
