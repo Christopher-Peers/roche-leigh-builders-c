@@ -1,17 +1,23 @@
-import React from "react"
+import React, { useState } from "react"
 
 import NavBar from '../components/nav-bar';
 import Menu from '../components/menu';
 import layoutStyles from '../styles/layout.module.scss';
 
 const Layout = ({ children }) => {
+	const [ isMenuOpen, setMenuOpenState ] = useState(false);
+
+	const toggleMenu = () => {
+		console.log('toggling', !isMenuOpen)
+		setMenuOpenState(!isMenuOpen)
+	}
 
 	return (
 		<div className={ layoutStyles.main }>
-			<Menu />
+			<Menu isOpen={ isMenuOpen} />
 			<div className={ layoutStyles.backgroundImage }></div>
 			<div className={ layoutStyles.contentWrapper }>
-				<NavBar />
+				<NavBar clickHandler={ toggleMenu } />
 				<div className={ layoutStyles.content }>
 					{ children }
 				</div>
@@ -19,5 +25,7 @@ const Layout = ({ children }) => {
 		</div>
 	)
 }
+
+
 
 export default Layout;

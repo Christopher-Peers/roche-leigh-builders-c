@@ -2,10 +2,10 @@ import React from 'react';
 
 import navBarStyles from '../styles/nav-bar.module.scss';
 
-const NavBar = () => {
+const NavBar = ({ clickHandler }) => {
 
     return (
-        <div className={ navBarStyles.navBarWrapper }>
+        <div onClick={ () => clickHandler() } className={ navBarStyles.navBarWrapper }>
             <button className={ navBarStyles.hamburger }>
                 <svg viewBox="0 0 100 80" width="22" height="40">
                     <rect width="100" height="8" rx="4"></rect>

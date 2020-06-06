@@ -1,9 +1,10 @@
 import React from 'react';
 
 import menuStyles from '../styles/menu.module.scss';
-const Menu = () => {
+const Menu = ({ isOpen }) => {
+
     return (
-        <div className={ menuStyles.menu }>
+        <div className={ `${menuStyles.menu} ${ isOpen ? menuStyles.menuOpen : '' }` }>
             <div className={ menuStyles.menuCloseWrapper}>
 
             </div>

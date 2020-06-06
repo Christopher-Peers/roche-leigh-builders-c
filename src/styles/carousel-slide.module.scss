@@ -1,0 +1,14 @@
+.slide {
+    box-shadow: 2px 2px 10px 2px rgba(133,117,116,1);
+    // background-color: rgb(241, 238, 238);
+    background-color: red;
+    position: absolute;
+    transition: transform 0.5s ease-in;
+}
+
+
+.slide--left {
+    @extend .slide;
+    width: 9.6rem;
+    height: 11.2rem;
+}
