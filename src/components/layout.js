@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
 
 	return (
 		<div className={ layoutStyles.main }>
-			<Menu isOpen={ isMenuOpen} />
+			<Menu isOpen={ isMenuOpen } clickHandler={ toggleMenu } />
 			<div className={ layoutStyles.backgroundImage }></div>
 			<div className={ layoutStyles.contentWrapper }>
 				<NavBar clickHandler={ toggleMenu } />

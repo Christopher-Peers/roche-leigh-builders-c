@@ -1,3 +1,17 @@
+.menu-wrapper {
+    position: fixed;
+    width: 0;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: background-color 0.5s ease-out;
+}
+
+.menu-wrapper--open {
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
 .menu {
     position: fixed;
     width: 0;
