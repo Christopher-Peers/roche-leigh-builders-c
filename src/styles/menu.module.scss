@@ -9,7 +9,7 @@
 
 .menu-wrapper--open {
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(76, 71, 119, 0.7);
 }
 
 .menu {
@@ -29,6 +29,12 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.menu-links--open {
+    opacity: 1;
 }
 
 .menu-link {
@@ -52,6 +58,12 @@
     display: flex;
     flex-direction: row-reverse;
     padding: 1rem;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.menu-close-wrapper--open {
+    opacity: 1;
 }
 
 .close-button {

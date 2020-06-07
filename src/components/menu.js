@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'gatsby';
+import { RiCloseLine } from 'react-icons/ri';
 
-import { Link } from 'gatsby'
 
 import menuStyles from '../styles/menu.module.scss';
 const Menu = ({ isOpen, clickHandler }) => {
@@ -8,12 +9,14 @@ const Menu = ({ isOpen, clickHandler }) => {
     return (
         <div className={ `${menuStyles.menuWrapper}  ${ isOpen ? menuStyles.menuWrapperOpen : '' }` }>
             <div className={ `${menuStyles.menu} ${ isOpen ? menuStyles.menuOpen : '' }` }>
-                <div className={ menuStyles.menuCloseWrapper}>
-                    <button onClick={ () => clickHandler() } className={ menuStyles.closeButton } >X</button>
+                <div className={ `${menuStyles.menuCloseWrapper} ${ isOpen ? menuStyles.menuCloseWrapperOpen : '' }` }>
+                    <button onClick={ () => clickHandler() } className={ menuStyles.closeButton } >
+                        <RiCloseLine size="2rem" />    
+                    </button>
                 </div>
 
                 <nav className={ menuStyles.menuLinkWrapper }>
-                    <ul className={ menuStyles.menuLinks }>
+                    <ul className={ `${ menuStyles.menuLinks } ${ isOpen ? menuStyles.menuLinksOpen : '' }` }>
                         <li className={ menuStyles.menuLink }>
                             <Link to="/">About us</Link>
                         </li>
