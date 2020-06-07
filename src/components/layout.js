@@ -8,7 +8,6 @@ const Layout = ({ children }) => {
 	const [ isMenuOpen, setMenuOpenState ] = useState(false);
 
 	const toggleMenu = () => {
-		console.log('toggling', !isMenuOpen)
 		setMenuOpenState(!isMenuOpen)
 	}
 

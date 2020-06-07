@@ -6,6 +6,7 @@ import LinearCard from '../components/linear-card';
 import Button from '../components/button';
 import Layout from '../components/layout';
 import Carousel from '../components/carousel';
+import Testimonials from "../components/testimonials";
 import indexStyles from '../styles/index.module.scss';
 
 const IndexPage = () => {
@@ -76,6 +77,8 @@ const IndexPage = () => {
 				<Carousel />
 				
 			</div>
+
+			<Testimonials />
 		
 		</Layout>
 	)
