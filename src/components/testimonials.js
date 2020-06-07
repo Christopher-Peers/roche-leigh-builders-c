@@ -21,7 +21,7 @@ const testimonialData = [
 
 const Testimonials = () => {
     return (
-        <div className={ testimonialsStyles.testimonialsWrapper }>
+        <div id="testimonials" className={ testimonialsStyles.testimonialsWrapper }>
             <div className={ testimonialsStyles.titleWrapper }>
                 <h2>Testimonials</h2>
                 <p>See what our recent customers have said about us!</p>

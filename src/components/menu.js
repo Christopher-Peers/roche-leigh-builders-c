@@ -33,8 +33,8 @@ const Menu = ({ isOpen, clickHandler }) => {
                         <li className={ menuStyles.menuLink }>
                             <Link to="/">Contact us</Link>
                         </li>
-                        <li className={ menuStyles.menuLink }>
-                            <Link to="/">Testimonials</Link>
+                        <li onClick={ () => handleNavigation('#testimonials') } className={ menuStyles.menuLink }>
+                            Testimonials
                         </li>
                     </ul>
                 </nav>
