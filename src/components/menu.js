@@ -1,10 +1,17 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { navigate } from '@reach/router';
+
 import { RiCloseLine } from 'react-icons/ri';
 
 
 import menuStyles from '../styles/menu.module.scss';
 const Menu = ({ isOpen, clickHandler }) => {
+
+    const handleNavigation = (target) => {
+        navigate(target);
+        clickHandler();
+    }
 
     return (
         <div className={ `${menuStyles.menuWrapper}  ${ isOpen ? menuStyles.menuWrapperOpen : '' }` }>
@@ -17,11 +24,11 @@ const Menu = ({ isOpen, clickHandler }) => {
 
                 <nav className={ menuStyles.menuLinkWrapper }>
                     <ul className={ `${ menuStyles.menuLinks } ${ isOpen ? menuStyles.menuLinksOpen : '' }` }>
-                        <li className={ menuStyles.menuLink }>
-                            <Link to="/">About us</Link>
+                        <li onClick={ () => handleNavigation('#about') } className={ menuStyles.menuLink }>
+                            About us
                         </li>
-                        <li className={ menuStyles.menuLink }>
-                            <Link to="/">Our Services</Link>
+                        <li onClick={ () => handleNavigation('#services') } className={ menuStyles.menuLink }>
+                            Our Services
                         </li>
                         <li className={ menuStyles.menuLink }>
                             <Link to="/">Contact us</Link>

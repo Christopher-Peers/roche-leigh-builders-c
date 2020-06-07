@@ -26,7 +26,7 @@ const IndexPage = () => {
 				</div>
 			</div>
 
-			<div className={ indexStyles.aboutText }>
+			<div className={ indexStyles.aboutText } id="about">
 				<h2 className={ indexStyles.aboutTitle }>About us</h2>
 				<p>With over 20 years in the construction industry you can ensure your next project is in the best of hands..</p>
 				<div>
@@ -62,7 +62,7 @@ const IndexPage = () => {
 			<div className={ indexStyles.secondImage }></div>
 
 			<LinearCard isRounded={ false }>
-				<div className={ indexStyles.secondCard }>
+				<div className={ indexStyles.secondCard } id="services">
 					<h2>Our Services</h2>
 					<p>We offer a wide range of competitevly priced services. From complete builds to loft conversions we have you covered.</p>
 					<Button>Contact us</Button>
