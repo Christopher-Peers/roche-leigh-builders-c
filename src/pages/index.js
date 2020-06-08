@@ -19,7 +19,7 @@ const IndexPage = () => {
 					<LinearCard>
 						<div className={ indexStyles.titleCard }>
 							<h1 className={ indexStyles.title }>Roche Leigh Construction</h1>
-							<p className={indexStyles.titleDescription } >Your local construction experts.</p>
+							<h6 className={ indexStyles.titleDescription } >Your local construction experts.</h6>
 							<Button>Contact us</Button>
 
 						</div>
