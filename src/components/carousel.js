@@ -4,8 +4,6 @@ import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 
 import CarouselSlide from './carousel-slide';
 import carouselStyles from '../styles/carousel.module.scss';
-// import jobs from '../job-data/jobs.json';
-
 
 const Carousel = () => {
 
