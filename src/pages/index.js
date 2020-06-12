@@ -9,7 +9,40 @@ import Carousel from '../components/carousel';
 import Testimonials from "../components/testimonials";
 import indexStyles from '../styles/index.module.scss';
 
-const IndexPage = () => {
+export const query = graphql`
+	query {
+		allContentfulPreviousJob {
+			nodes {
+				id
+				images {
+					file {
+						url
+					}
+				}
+				jobDescription {
+					jobDescription
+				}
+				location
+			}
+		}
+		allContentfulTestimonial {
+			nodes {
+				id
+				customerName
+				customerSpeech {
+					customerSpeech
+				}
+				customerAvatar {
+					file {
+						url
+					}
+				}
+			}
+		}
+	}
+`
+
+const IndexPage = ({ data: { allContentfulPreviousJob, allContentfulTestimonial } }) => {
 
 	return (
 		<Layout>
@@ -78,7 +111,7 @@ const IndexPage = () => {
 				
 			</div>
 
-			<Testimonials />
+			<Testimonials testimonialsData={ allContentfulTestimonial } />
 		
 		</Layout>
 	)

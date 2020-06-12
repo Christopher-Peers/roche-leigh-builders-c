@@ -3,9 +3,9 @@ import React from 'react';
 import testimonialStyles from '../styles/testimonial.module.scss';
 
 const Testimonial = ({ testimonial }) => {
-    const { customerName } = testimonial.node;
-    const { customerSpeech } = testimonial.node.customerSpeech;
-    const { url } = testimonial.node.customerAvatar.file
+    const { customerName } = testimonial;
+    const { customerSpeech } = testimonial.customerSpeech;
+    const { url } = testimonial.customerAvatar.file
 
     return (
         <div className={ testimonialStyles.testimonialWrapper }>
