@@ -149,15 +149,29 @@ ul li {
 	-webkit-text-fill-color: transparent;
 }
 
+.qualifications-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
 .qualifications {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	list-style: none;
-    padding-left: 0;
+	padding-left: 0;
+	
+	@include md {
+		flex-wrap: nowrap;
+		width: 43rem;
+		max-width: 43rem;
+		align-items: flex-start;
+	}
 }
 
 .qualification {
+	position: relative;
 	padding: 1rem;
 	width: 50%;
 	list-style: none;
@@ -172,20 +186,50 @@ ul li {
 	@extend .qualification;
 	border-right: 1px solid rgb(213, 213, 213);
 	border-bottom: 1px solid rgb(213, 213, 213);
+
+	@include md {
+		border: none;
+	}
 }
 
 .qualification--2 {
 	@extend .qualification;
 	border-bottom: 1px solid rgb(213, 213, 213);
+
+	@include md {
+		border: none;
+	}
 }
 
 .qualification--3 {
 	@extend .qualification;
 	border-right: 1px solid rgb(213, 213, 213);
+
+	@include md {
+		border: none;
+	}
 }
 
 .qualification--4 {
 	@extend .qualification;
+
+	@include md {
+		border: none;
+	}
+}
+
+.qualification--2::before,
+.qualification--3::before,
+.qualification--4::before {
+	@include md {
+		position: absolute;
+		content: "";
+		height: 1px;
+		background-color: rgb(213, 213, 213);;
+		left: -3.4rem;
+		top: 3rem;
+		width: 6.8rem;
+	}
 }
 
 .qualification-outer {

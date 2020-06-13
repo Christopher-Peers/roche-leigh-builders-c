@@ -63,31 +63,31 @@ const IndexPage = ({ data: { allContentfulPreviousJob, allContentfulTestimonial 
 			<div className={ indexStyles.aboutText } id="about">
 				<h2 className={ indexStyles.aboutTitle }>About us</h2>
 				<p>With over 20 years in the construction industry you can ensure your next project is in the best of hands..</p>
-				<div>
+				<div className={ indexStyles.qualificationsWrapper }>
 					<ul className={ indexStyles.qualifications }>
 						<li className={ indexStyles.qualification1 }>
 							<div className={ indexStyles.qualificationOuter }>
 								<FaHardHat  size="2rem" />
 							</div>
-							<p>From initial contact</p>
+							<p>Initial contact to</p>
 						</li>
 						<li className={ indexStyles.qualification2 }>
 							<div className={ indexStyles.qualificationOuter }>
 								<FaHammer  size="2rem" />
 							</div>
-							<p>To detailed planning</p>
+							<p>Detailed planning</p>
 						</li>
 						<li className={ indexStyles.qualification3 }>
 							<div className={ indexStyles.qualificationOuter }>
 								<FaPaintRoller  size="2rem" />
 							</div>
-							<p>To quality workmanship</p>
+							<p>Quality workmanship</p>
 						</li>
 						<li className={ indexStyles.qualification4 }>
 							<div className={ indexStyles.qualificationOuter }>
 								<FaWrench  size="2rem" />
 							</div>
-							<p>To your dream completed</p>
+							<p>Dream completion</p>
 						</li>
 					</ul>
 				</div>
