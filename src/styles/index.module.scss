@@ -281,3 +281,17 @@ ul li {
 	height: 100%;
 	text-align: center;
 }
+
+.contact-title-wrapper {
+	width: 100%;
+	background: linear-gradient(to right, rgba(238, 101, 136, 0.95), rgba(246, 149, 96, 0.95));
+	padding: 2.75rem 1.5rem;
+	display: flex;
+    flex-direction: column;
+	text-align: center;
+	color: white;
+}
+
+.contact-details {
+	padding: 2rem 1.5rem;
+}
