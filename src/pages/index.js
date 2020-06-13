@@ -93,15 +93,21 @@ const IndexPage = ({ data: { allContentfulPreviousJob, allContentfulTestimonial 
 				</div>
 			</div>
 
-			<div className={ indexStyles.secondImage }></div>
+			<div className={ indexStyles.servicesWrapper }>
 
-			<LinearCard isRounded={ false }>
-				<div className={ indexStyles.secondCard } id="services">
-					<h2>Our Services</h2>
-					<p>We offer a wide range of competitevly priced services. From complete builds to loft conversions we have you covered.</p>
-					<Button>Contact us</Button>
+				<div className={ indexStyles.secondImage }></div>
+
+				<div className={ indexStyles.secondCardWrapper }>
+					<LinearCard isRounded={ false } >
+						<div className={ indexStyles.secondCard } id="services">
+							<h2>Our Services</h2>
+							<p>We offer a wide range of competitevly priced services. From complete builds to loft conversions we have you covered.</p>
+							<Button>Contact us</Button>
+						</div>
+					</LinearCard>
 				</div>
-			</LinearCard>
+
+			</div>
 
 			<div className={ indexStyles.recentWork }>
 				<h2 className={ indexStyles.recentWorkTitle }>Recent Work</h2>
