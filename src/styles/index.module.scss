@@ -99,10 +99,24 @@ ul li {
 	color: white;
 }
 
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 .first-card {
 	padding: 0 1.5rem;
 	max-width: 31rem;
 	text-align: center;
+	animation-name: fade-in;
+	animation-duration: 1000ms;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in;
 }
 
 .title-card {
