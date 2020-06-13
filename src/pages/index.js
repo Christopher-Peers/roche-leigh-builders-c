@@ -69,25 +69,25 @@ const IndexPage = ({ data: { allContentfulPreviousJob, allContentfulTestimonial 
 							<div className={ indexStyles.qualificationOuter }>
 								<FaHardHat  size="2rem" />
 							</div>
-							<p>Text one</p>
+							<p>From initial contact</p>
 						</li>
 						<li className={ indexStyles.qualification2 }>
 							<div className={ indexStyles.qualificationOuter }>
 								<FaHammer  size="2rem" />
 							</div>
-							<p>Text two</p>
+							<p>To detailed planning</p>
 						</li>
 						<li className={ indexStyles.qualification3 }>
 							<div className={ indexStyles.qualificationOuter }>
 								<FaPaintRoller  size="2rem" />
 							</div>
-							<p>Text three</p>
+							<p>To quality workmanship</p>
 						</li>
 						<li className={ indexStyles.qualification4 }>
 							<div className={ indexStyles.qualificationOuter }>
 								<FaWrench  size="2rem" />
 							</div>
-							<p>Text four</p>
+							<p>To your dream completed</p>
 						</li>
 					</ul>
 				</div>
@@ -107,7 +107,7 @@ const IndexPage = ({ data: { allContentfulPreviousJob, allContentfulTestimonial 
 				<h2 className={ indexStyles.recentWorkTitle }>Recent Work</h2>
 				<p>Here is a selection of recent work completed by us.</p>
 
-				<Carousel />
+				<Carousel previousJobsData={ allContentfulPreviousJob } />
 				
 			</div>
 

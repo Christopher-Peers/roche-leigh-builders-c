@@ -5,7 +5,6 @@ import testimonialsStyles from '../styles/testimonials.module.scss';
 import Testimonial from './testimonial';
 
 const Testimonials = ({ testimonialsData }) => {
-  console.log('>>>>>>>>>>>>>', testimonialsData)
 
     return (
         <div id="testimonials" className={ testimonialsStyles.testimonialsWrapper }>
@@ -15,8 +14,8 @@ const Testimonials = ({ testimonialsData }) => {
             </div>
 
             <div className={ testimonialsStyles.testimonialsContent }>
-                { testimonialsData.nodes.map((testimonial, index) => (
-                        <Testimonial testimonial={testimonial} key={index} />
+                { testimonialsData.nodes.map((testimonial) => (
+                        <Testimonial testimonial={ testimonial } key={ testimonial.id } />
                     )
                 )}
             </div>

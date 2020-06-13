@@ -6,35 +6,22 @@ import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 import carouselStyles from '../styles/carousel.module.scss';
 import { useStaticQuery } from 'gatsby';
 
-const Carousel = () => {
+const Carousel = ({ previousJobsData }) => {
 
-	const previousJobsQueryData = useStaticQuery(graphql`
-	{
-
-		allContentfulPreviousJob {
-			edges {
-				node {
-					id
-					location
-					images {
-						file {
-							url
-						}
-					}
-					jobDescription {
-						jobDescription
-					}
-				}
-			}
-		}
-	}`)
-
-	const [ previousJobs, setPreviousJobs ] = useState( parseJobData(previousJobsQueryData) );
-
-
+	// const [ previousJobs, setPreviousJobs ] = useState( parseJobData(previousJobsQueryData) );
 
 	return (
-	<></>
+		<ul>
+			{
+				previousJobsData.nodes.map((job) => (
+					<li key={ job.id }>
+						<img src={ `https:${job.images.file.url}?w=200&fl=progressive` } />
+						<h3>{ job.location }</h3>
+						<p>{ job.jobDescription.jobDescription }</p>
+					</li>
+				))
+			}
+		</ul>
 	)
 
 
