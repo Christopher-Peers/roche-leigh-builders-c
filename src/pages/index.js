@@ -131,7 +131,7 @@ const IndexPage = ({ data: { allContentfulPreviousJob, allContentfulTestimonial 
 
 			<div className={ indexStyles.contactTitleWrapper }>
 				<h2>Contact Us</h2>
-				<p>Get in touch today, let us help you take the first step to creating your dreams.</p>
+				<p>Let us help you take the first step to creating your dreams.</p>
 			</div>
 
 			<div className={ indexStyles.contactDetails }>
