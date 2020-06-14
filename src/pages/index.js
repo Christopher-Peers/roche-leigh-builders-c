@@ -1,6 +1,16 @@
 import React from "react"
 
-import { FaHardHat, FaHammer, FaPaintRoller, FaScrewdriver, FaRuler, FaWrench } from 'react-icons/fa';
+import {
+	FaHardHat,
+	FaHammer,
+	FaPaintRoller,
+	FaScrewdriver,
+	FaRuler,
+	FaWrench,
+	FaRegEnvelope,
+	FaMobileAlt,
+	FaFacebookSquare
+} from 'react-icons/fa';
 
 import LinearCard from '../components/linear-card';
 import Button from '../components/button';
@@ -125,11 +135,26 @@ const IndexPage = ({ data: { allContentfulPreviousJob, allContentfulTestimonial 
 			</div>
 
 			<div className={ indexStyles.contactDetails }>
-				<p>We can be reached via these means.</p>
-				<ul>
-					<li>Email</li>
-					<li>Phone</li>
-					<li>Facebook</li>
+				<h2 className={ indexStyles.contactDetails__title }>Get in touch</h2>
+				<ul className={ indexStyles.contactItems }>
+					<li className={ indexStyles.contactItem__outer }>
+						<div className={ indexStyles.contactItem__iconWrapper }>
+							<FaRegEnvelope  size="2rem" />
+						</div>
+						<p>enquiries@rlcon.co.uk</p>
+					</li>
+					<li className={ indexStyles.contactItem__outer }>
+						<div className={ indexStyles.contactItem__iconWrapper }>
+							<FaMobileAlt  size="2rem" />
+						</div>
+						<p>07957 076 699</p>
+					</li>
+					<li className={ indexStyles.contactItem__outer }>
+						<div className={ indexStyles.contactItem__iconWrapper }>
+							<FaFacebookSquare  size="2rem" />
+						</div>
+						<p>Facebook</p>
+					</li>
 				</ul>
 
 			</div>

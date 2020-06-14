@@ -143,7 +143,8 @@ ul li {
 }
 
 .about-title,
-.recent-work-title {
+.recent-work-title,
+.contact-details__title {
 	background: linear-gradient(90deg, rgba(238, 101, 136, 0.95), rgba(246, 149, 96, 0.95));
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -294,4 +295,37 @@ ul li {
 
 .contact-details {
 	padding: 2rem 1.5rem;
+	text-align: center;
+}
+
+.contact-items {
+	list-style-type: none;
+	padding: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact-item__outer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact-item__outer:not(:last-child) {
+	margin-bottom: 1rem;
+	border-bottom: 1px solid rgb(213, 213, 213);
+}
+
+.contact-item__icon-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 4rem;
+	width: 4rem;
+	border-radius: 50%;
+	border: 1px solid rgb(213, 213, 213);
+	color: rgb(238, 101, 136);
 }
