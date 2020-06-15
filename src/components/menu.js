@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import { navigate } from '@reach/router';
 
 import { RiCloseLine } from 'react-icons/ri';
@@ -30,8 +29,8 @@ const Menu = ({ isOpen, clickHandler }) => {
                         <li onClick={ () => handleNavigation('#services') } className={ menuStyles.menuLink }>
                             Our Services
                         </li>
-                        <li className={ menuStyles.menuLink }>
-                            <Link to="/">Contact us</Link>
+                        <li onClick={ () => handleNavigation('#contact') } className={ menuStyles.menuLink }>
+                            Contact us
                         </li>
                         <li onClick={ () => handleNavigation('#testimonials') } className={ menuStyles.menuLink }>
                             Testimonials

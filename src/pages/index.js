@@ -129,7 +129,7 @@ const IndexPage = ({ data: { allContentfulPreviousJob, allContentfulTestimonial 
 
 			<Testimonials testimonialsData={ allContentfulTestimonial } />
 
-			<div className={ indexStyles.contactTitleWrapper }>
+			<div className={ indexStyles.contactTitleWrapper } id="contact">
 				<h2>Contact Us</h2>
 				<p>Let us help you take the first step to creating your dreams.</p>
 			</div>
