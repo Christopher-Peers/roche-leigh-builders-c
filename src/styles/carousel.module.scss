@@ -1,10 +1,45 @@
-.slides-track {
+.carousel {
+    position: relative;
+    height: 22rem;
+    max-width: 15rem;
+    margin: 0 auto;
+    &:after {
+        content: '';
+        display: block;
+        outline: 4px solid dodgerblue;
+        width: 15rem;
+        position: absolute;
+        height: 22rem;
+    }
 }
 
-.previous-jobs {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.carousel-button {
+    background-color: transparent;
+    border: none;
+    height: 3rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -1.5rem;
+    z-index: 2;
 }
+
+.carousel-button:focus {
+    outline: none;
+}
+
+.carousel-button--left {
+    @extend .carousel-button;
+    left: -3rem;
+}
+
+.carousel-button--right {
+    @extend .carousel-button;
+    right: -3rem;
+}
+
+.slides-track {
+    position: absolute;
+    display: flex;
+    transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+

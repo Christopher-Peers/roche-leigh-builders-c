@@ -1,4 +1,4 @@
-import React, { useRef, useState, useLayoutEffect, useEffect } from 'react';
+import React, { useState } from 'react';
 
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 
@@ -21,22 +21,46 @@ const Carousel = ({ previousJobsData }) => {
 	}
 
 	return (
-		<div className={ carouselStyles.slidesTrack }>
-			<button onClick={ () => previousSlide() } disabled={ currentSelection.index === 0 }>Previous</button>
-			<button onClick={ () => nextSlide() } disabled={ currentSelection.index === previousJobs.length - 1 }>Next</button>
-			<ul className={ carouselStyles.previousJobs }>
+
+		<div className={`${carouselStyles.carousel} active-slide-${currentSelection.index}`}>
+
+			<button
+				className={ carouselStyles.carouselButtonLeft }
+				onClick={ () => previousSlide() }
+				disabled={ currentSelection.index === 0 }>
+				
+				<FaAngleLeft size="2rem" />
 			
-				<CarouselSlide
-					key={ currentSelection.id }
-					imageSrc={ `https:${currentSelection.imageUrl}?h=200` }
-					jobDescription={ currentSelection.jobDescription }
-					jobLocation={ currentSelection.location }
-					jobId={ currentSelection.id }
-				/>
+			</button>
+
+			<button
+				className={ carouselStyles.carouselButtonRight }
+				onClick={ () => nextSlide() }
+				disabled={ currentSelection.index === previousJobs.length - 1 }>
+				
+				<FaAngleRight size="2rem" />
+				
+			</button>
+
+			<div 
+				className={ carouselStyles.slidesTrack }
+				style={{
+					'transform': `translateX(-${ currentSelection.index * ( 100 / previousJobs.length ) }%)`
+				}}>
 			
-			</ul>
+				{
+					previousJobs.map((job, index) => (
+						<CarouselSlide
+							{ ...job }
+							isActive={ currentSelection.index === index }
+						/>
+					))
+				}
+			
+			</div>
 
 		</div>
+
 	)
 
 
@@ -47,8 +71,8 @@ const parseJobData = (data) => {
 		const result = {};
 		result.index = index;
 		result.id = node.id;
-		result.location = node.location;
-		result.imageUrl = node.images.file.url;
+		result.jobLocation = node.location;
+		result.imageUrl = `https:${node.images.file.url}?h=200`;
 		result.jobDescription = node.jobDescription.jobDescription;
 		return result;
 	});
