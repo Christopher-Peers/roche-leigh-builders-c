@@ -1,5 +1,4 @@
 import React from 'react';
-import { useStaticQuery, StaticQuery, graphql } from 'gatsby';
 
 import testimonialsStyles from '../styles/testimonials.module.scss';
 import Testimonial from './testimonial';

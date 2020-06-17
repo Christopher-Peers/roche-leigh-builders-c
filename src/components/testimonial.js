@@ -1,15 +1,16 @@
 import React from 'react';
 
+import Img from 'gatsby-image';
 import testimonialStyles from '../styles/testimonial.module.scss';
 
 const Testimonial = ({ testimonial }) => {
     const { customerName } = testimonial;
     const { customerSpeech } = testimonial.customerSpeech;
-    const { url } = testimonial.customerAvatar.file
+    const { fixed } = testimonial.customerAvatar;
 
     return (
         <div className={ testimonialStyles.testimonialWrapper }>
-            <img className={ testimonialStyles.testimonialImage } src={`https:${url}`} />
+            <Img fixed={fixed} className={ testimonialStyles.testimonialImage }/>
             <h3>{ customerName }</h3>
             <p className={ testimonialStyles.customerSpeech }>" { customerSpeech } "</p>
         </div>

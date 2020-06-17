@@ -43,8 +43,8 @@ export const query = graphql`
 					customerSpeech
 				}
 				customerAvatar {
-					file {
-						url
+					fixed(width: 128, height: 128) {
+						...GatsbyContentfulFixed
 					}
 				}
 			}
